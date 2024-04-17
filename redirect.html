@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección aleatoria</title>
+<script>
+    // Función para redirigir aleatoriamente al cargar la página
+    window.onload = function() {
+        // Array de URLs disponibles
+        var urls = ["https://www.google.com", "https://www.bing.com"];
+
+        // Obtener un número aleatorio entre 0 y 1
+        var randomIndex = Math.floor(Math.random() * 2);
+
+        // Redirigir a la URL aleatoria
+        window.location.href = urls[randomIndex];
+    };
+</script>
+</head>
+<body>
+    <h1>Redirección aleatoria</h1>
+    <p>Redirigiendo aleatoriamente...</p>
+</body>
+</html>
